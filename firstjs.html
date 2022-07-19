@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>First java script page</title>
+</head>
+<body>
+<h1> this is first java script page...</h1>
+ 
+<h2> second heading</h2>
+<script >
+
+let message="welcome to javascript page";
+let greet=prompt("enter your name");
+window.alert(message +".."+greet);
+alert(greet);
+let redirect=prompt("Enter your value to search in google ");
+let choice=confirm("are you sure!!!!");
+if(choice==true){
+    location.href="https://www.google.com/"+redirect;
+}else{
+    alert("thank you for interacting...")
+}
+console.warn("this is a warning");
+console.error("this is error");
+console.info("this is info...");
+
+setTimeout(function(){
+
+    console.log("clearing");
+    console.clear();
+},3000)
+
+let details={
+
+    name :'Akash',
+    Address :'Madhapur',
+    Phno:'9938337734'
+
+}
+console.log(details);
+console.table(details);
+</script>
+</body>
+</html>
